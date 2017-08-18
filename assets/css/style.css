@@ -60,9 +60,18 @@ h1 {
 }
 
 .page-wrap {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    div#container.page-wrap {
+        padding: 0 30px;
+    }
+}
+
+
+
 
 
 /* ------ HEADER ------ */
@@ -73,6 +82,9 @@ header {
     background-color: #FFF;
     border-bottom: 2px solid #cccccc;
 }
+
+
+
 
 
 /* ------ HEADER LOGO ------ */
@@ -92,6 +104,9 @@ header .logo a {
 header .logo h1 {
     color: #fff;
 }
+
+
+
 
 
 /* ------ HEADER MENU ------ */
@@ -119,6 +134,9 @@ header .menu li a:hover {
 }
 
 
+
+
+
 /* ------ CONTAINER ------ */
 
 div#container {
@@ -130,12 +148,13 @@ div#container {
 }
 
 
+
 /* ------ MAIN CONTENT ------ */
 
 .main-content {
-    width: 650px;
+    width: 67.70833333333334%;
     padding: 30px;
-    clear: left;
+    float: left;
     border: 1px solid #dddddd;
     background-color: #fff;
 }
@@ -146,6 +165,16 @@ div#container {
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    div.main-content {
+        width: 100%;
+        min-width: 405px;
+        float: none;
+        display: block;
+    }
+}
+
+
 
 /* ------ MAIN CONTENT - ABOUT ------ */
 
@@ -155,6 +184,9 @@ div#container {
     margin: 0 10px 10px 0;
     width: 185px;
 }
+
+
+
 
 
 /* ------ MAIN CONTENT - CONTACT ------ */
@@ -199,6 +231,9 @@ div#container {
 }
 
 
+
+
+
 /* ------ MAIN CONTENT - PORTFOLIO ------ */
 
 .main-content .portfolio .portfolio-item {
@@ -239,11 +274,12 @@ div#container {
 
 .sidebar {
     display: table;
+    background-color: white;
     float: right;
-    width: 270px;
+    width: 28.125%;
+    min-width: 260px;
     padding: 30px;
     border: 1px solid #dddddd;
-    background-color: #fff;
 }
 
 .sidebar h3 {
@@ -256,7 +292,7 @@ div#container {
     width: 62px;
     height: auto;
     margin-top: 10px;
-    margin-right:5px;
+    margin-right: 5px;
 }
 
 .sidebar .social-icon:last-child {
@@ -267,6 +303,19 @@ div#container {
     width: 62px;
     height: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: block;
+        float: none;
+        width: 100%;
+        min-width: 405px;
+        margin-top: 15px;
+        padding: 30px;
+        border: 1px solid #dddddd;
+    }
+}
+
 
 /* ------ FOOTER ------ */
 
